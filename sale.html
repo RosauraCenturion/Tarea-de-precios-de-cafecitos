@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DIC cafe</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sale.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="section_inner">
+      <div class="section_title">
+        <h1>Venta de café en grano</h1>
+      </div>
+    </section>
+
+    <section class="section_inner menu_section">
+      <div class="center">
+        <h1 class="menu_title">gama (de productos)</h1>
+      </div>
+      <ul class="menu_list coffee_menu">
+        <li class="caffee_menu_list_item">
+          <div class="caffee_menu_content">
+            <h2 class="menu_item_title">Mezcla original 200 g</h2>
+            <p class="caffee_menu_price">500 yenes</p>
+          </div>
+          <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+        </li>
+        <li class="caffee_menu_list_item">
+          <div class="caffee_menu_content">
+            <h2 class="menu_item_title">Mezcla original 500 g</h2>
+            <p class="caffee_menu_price">900 yenes</p>
+          </div>
+          <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+        </li>
+        <li class="caffee_menu_list_item">
+          <div class="caffee_menu_content">
+            <h2 class="menu_item_title">Mezcla especial 200 g</h2>
+            <p class="caffee_menu_price">700 yenes</p>
+          </div>
+          <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+        </li>
+        <li class="caffee_menu_list_item">
+          <div class="caffee_menu_content">
+            <h2 class="menu_item_title">Mezcla especial 500 g</h2>
+            <p class="caffee_menu_price">1.200 yenes.</p>
+          </div>
+          <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+        </li>
+      </ul>
+      <h2>Gastos de envío.</h2>
+      <ul>
+        <li>Menos de 2000 yenes: 500 yenes de gastos de envío.</li>
+        <li>2000 yenes o más: 250 yenes.</li>
+        <li>3000 yenes o más: Gratis.</li>
+      </ul>
+    </section>
+
+    <section class="section_inner">
+      <h2>pedir</h2>
+      <form>
+        <p>Seleccionar producto</p>
+        <div>
+          <select id="product" required>
+            <option hidden>Por favor, seleccione. </option>
+            <option value="1">Mezcla Original 200g ¥ 500</option>
+            <option value="2">Mezcla Original 500g ¥ 900</option>
+            <option value="3">Mezcla Epecial 200g ¥ 700</option>
+            <option value="4">Mezcla Especial 500g ¥ 1.200</option>
+          </select>
+          <p>Seleccionar cantidad</p>
+          <input type="number" min="1" max="5" id="number" required>
+        </div>
+        <br>
+        <input type="button" class="btn" value="Añadir" onclick="add()">
+        <input type="button" class="btn" value="importe total" onclick="calc()">
+      </form>
+    </section>
+    <script type="text/javascript" src="javascripts/sale.js"></script>
+    <footer>
+      <nav id="pata">
+        <ul id="pie">
+          <a href="index.html">
+            <li class="tp">Home</li>
+          </a>
+          <a href="#menu">
+            <li class="tp">Menu</li>
+          </a>
+          <a href="contact.html">
+            <li class="tp">Contact</li>
+          </a>
+          <a href="index.html">
+            <li>
+              <img src="images/sample_logo_w.png" id="logopata">
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <p id="c">© DIVIC Corp. All RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+</html>
